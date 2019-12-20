@@ -25,7 +25,7 @@ public class TransactionalMap {
         User user2 = GetUser(id2);
 
         if (user1.getBalance() < money) {
-            System.out.println("id1 has only " + user1.getBalance() + "! Error!");
+            System.out.println(id1 + "user has only " + user1.getBalance() + "! Error!");
             return;
         }
 
@@ -42,6 +42,6 @@ public class TransactionalMap {
     }
 
     public void checkBalance (Long id1, Long id2) {
-        System.out.println(id1 + " balance " + GetUser(id1).getBalance() + " and " + id2 + " balance " + GetUser(id2).getBalance());
+        System.out.println(id1 + " user has balance " + GetUser(id1).getBalance() + " and " + id2 + " user has balance " + GetUser(id2).getBalance());
     }
 }
